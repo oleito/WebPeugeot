@@ -2,3 +2,14 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+
+@font-face {
+    font-family: Peugeot_new-regular;
+    src: url(assets/fonts/Peugeot_New/WOFF/Peugeot_New-Regular.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: Peugeot_new-bold;
+    src: url(assets/fonts/Peugeot_New/WOFF/Peugeot_New-Bold.woff) format("woff");
+  }
