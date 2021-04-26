@@ -6,6 +6,7 @@ import { SliderComponent } from './slider/slider.component';
 import { HomeComponent } from './home.component';
 import { ModelosComponent } from './modelos/modelos.component';
 import { ServiciosComponent } from './servicios/servicios.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ServiciosComponent } from './servicios/servicios.component';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    NgbModule
   ]
 })
 export class HomeModule { }
