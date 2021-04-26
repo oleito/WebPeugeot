@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModelosComponent implements OnInit {
 
+  images = [408, 3008, 'boxer'].map((n) => `assets/home/models/${n}.png`);
   constructor() { }
 
   ngOnInit(): void {
