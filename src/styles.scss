@@ -1,15 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
-
+@import "~bootstrap/scss/bootstrap";
 
 @font-face {
-    font-family: Peugeot_new-regular;
-    src: url(assets/fonts/Peugeot_New/WOFF/Peugeot_New-Regular.woff) format("woff");
-  }
+  font-family: Peugeot_new-regular;
+  src: url(assets/fonts/Peugeot_New/WOFF/Peugeot_New-Regular.woff) format("woff");
+}
 
-  @font-face {
-    font-family: Peugeot_new-bold;
-    src: url(assets/fonts/Peugeot_New/WOFF/Peugeot_New-Bold.woff) format("woff");
-  }
+@font-face {
+  font-family: Peugeot_new-bold;
+  src: url(assets/fonts/Peugeot_New/WOFF/Peugeot_New-Bold.woff) format("woff");
+}
+
+// Definicion colores segun manual de marca
+:root {
+  --primary-1: #000000;
+  --primary-2: #00a3e0;
+  --primary-3: #f7f7f7;
+  --primary-4: #ffffff;
+
+  --secondary-1: #bfdd0b;
+  --secondary-2: #4cc9f9;
+  --secondary-3: #ececee;
+  --secondary-4: #adaeb2;
+  --secondary-5: #787b80;
+
+  --error: #ff0000;
+  --valid: #429800;
+}
