@@ -1,1 +1,11 @@
-<p>modelos works!</p>
+<h2>LOS MÁS POPULARES</h2>
+
+<div class="models-container border border-dark">
+    <div class="row mx-0">
+        <div class="col-md-4 model-box text-center py-3" *ngFor="let image of images; index as i">
+            <h3>308</h3>
+            <img [src]="images[i]" alt="Random first slide">
+            <button type="button" class="btn btn-primary rounded-0">Contactar</button>
+        </div>
+    </div>
+</div>
