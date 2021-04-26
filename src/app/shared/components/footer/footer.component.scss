@@ -1,0 +1,20 @@
+.footer-peugeot {
+    font-size: 90%;
+    background-color: var(--primary-1);
+    color: var(--primary-3);
+    font-family: "Peugeot_new-regular";
+    .h6 {
+        font-family: "Peugeot_new-bold";
+    }
+    a {
+        color: var(--secondary-5);
+    }
+    a:hover {
+        color: var(--secondary-3);
+        text-decoration: underline;
+    }
+}
+
+h6 {
+    margin-bottom: 2em;
+}
