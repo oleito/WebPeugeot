@@ -29,3 +29,12 @@
   --error: #ff0000;
   --valid: #429800;
 }
+// reset algunas clases de bootstrap
+input,
+textarea {
+  box-shadow: none !important;
+}
+.form-control,
+.form-control {
+  border-radius: 0px !important;
+}
