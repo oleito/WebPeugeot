@@ -1,3 +1,7 @@
+h2 {
+    font-family: Peugeot_new-bold;
+}
+
 .contact-form {
     background-color: var(--primary-3);
 }
@@ -6,4 +10,7 @@
     background-color: var(--primary-2);
     color: var(--primary-4);
     font-family: "Peugeot_new-regular";
+}
+map-container {
+    height: 800px !important;
 }
