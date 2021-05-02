@@ -1,7 +1,7 @@
 <ngb-carousel *ngIf="images">
     <ng-template ngbSlide *ngFor="let image of images; index as i">
         <div class="picsum-img-wrapper">
-            <img [src]="images[i]" alt="Random first slide">
+            <img [src]="images[i]" class="img-fluid" alt="Random first slide">
         </div>
         <div class="carousel-caption">
             <button type="button" class="btn btn-primary-2 btn-lg rounded-0">CONTACTAR</button>
