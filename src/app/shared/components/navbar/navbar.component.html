@@ -4,15 +4,20 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand mx-auto" href="#">
-        <img src="assets/images/logo.png" width="80" height="80"
-            class="d-inline-block align-top" alt="" loading="lazy">
+        <img src="assets/images/logo.png" width="80" height="80" class="d-inline-block align-top" alt="" loading="lazy">
     </a>
     <div class="collapse navbar-collapse flex-column" id="appNavigation" [ngbCollapse]="isCollapsed">
         <!-- <div class="navbar-nav ml-auto"> -->
         <ul class="navbar-nav navbar-secondary mt-auto ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#contacto">Busca tu cuota</a>
+                <span class="nav-link"> Casa Central: Av Santos Ortiz 1228</span>
             </li>
+            <li class="nav-item">
+                <span class="nav-link">Cel: 266-4303957</span>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#contacto">Busca tu cuota</a>
+            </li> -->
         </ul>
 
 
@@ -30,17 +35,5 @@
                 <a class="nav-link" href="#contacto">CONTACTO</a>
             </li>
         </ul>
-        <!-- <a (click)="toggleMenu()" class="nav-item nav-link" routerLink="" routerLinkActive="active">Inicio</a>
-
-            <div class="nav-item dropdown" ngbDropdown>
-                <a class="nav-link dropdown-toggle" id="dropdownSede" ngbDropdownToggle>Sede</a>
-                <div class="dropdown-menu" ngbDropdownMenu aria-labelledby="dropdownSede">
-                    <a class="dropdown-item" routerLink="/sede-show" routerLinkActive="active"
-                        (click)="toggleMenu()">Lista</a>
-                    <a class="dropdown-item" routerLink="/sede-admin" routerLinkActive="active"
-                        (click)="toggleMenu()">Agregar</a>
-                </div>
-            </div> -->
-        <!-- </div> -->
     </div>
 </nav>
