@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiciosComponent implements OnInit {
 
+  servicios= [
+    {
+      img: "ahorro.jpg",
+      telefono: "266 430 3957"
+    },
+    {
+      img: "autoplan.jpg",
+      telefono: "266 450 3609"
+    },
+    {
+      img: "profesional.jpg",
+      telefono: "260 453 5192"
+    },
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
