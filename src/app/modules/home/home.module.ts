@@ -7,6 +7,8 @@ import { HomeComponent } from './home.component';
 import { ModelosComponent } from './modelos/modelos.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ContactoComponent } from './contacto/contacto.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 
 @NgModule({
@@ -14,12 +16,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SliderComponent,
     HomeComponent,
     ModelosComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    ContactoComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    NgbModule
+    NgbModule,
+    GoogleMapsModule
   ]
 })
 export class HomeModule { }

@@ -6,4 +6,9 @@ h2 {
 }
 .model-box:hover {
     border-color: var(--primary-2);
+    transition: 800ms;
+}
+
+.btn {
+margin-left: 2px;
 }
