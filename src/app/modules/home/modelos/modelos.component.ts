@@ -8,14 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ModelosComponent implements OnInit {
 
   images = [3008, 408, 3008, 'boxer'].map((n) => `assets/home/models/${n}.png`);
-  // modelos = [
-  //   { nombre: '408', img: '408.png', alt: 'Descripcion del modelo' },
-  //   { nombre: '3008', img: '3008.png', alt: 'Descripcion del modelo' },
-  //   { nombre: 'boxer', img: 'boxer.png', alt: 'Descripcion del modelo' },
-  // ];
 
-
-  modelos= [
+  modelos = [
     {
       img: "208.png",
       nombre: "208",
