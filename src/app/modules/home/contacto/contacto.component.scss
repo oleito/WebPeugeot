@@ -6,11 +6,12 @@ h2 {
     background-color: var(--primary-3);
 }
 
-.btn-primary-2 {
-    background-color: var(--primary-2);
-    color: var(--primary-4);
-    font-family: "Peugeot_new-regular";
+.form-header {
+    font-family: Peugeot_new-regular;
+    background-color: var(--primary-3);
+    font-size: 1em;
 }
+
 map-container {
     height: 800px !important;
 }

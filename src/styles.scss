@@ -31,10 +31,24 @@
 }
 // reset algunas clases de bootstrap
 input,
-textarea {
+textarea,
+.btn {
   box-shadow: none !important;
+}
+.input:focus {
+  border-color: var(--secondary-1) !important;
 }
 .form-control,
 .form-control {
   border-radius: 0px !important;
+}
+
+.btn-primary-2 {
+  background-color: var(--primary-2);
+  color: var(--primary-4);
+  font-family: "Peugeot_new-regular";
+}
+.btn-primary-2:hover {
+  background-color: var(--primary-1);
+  color: var(--primary-4);
 }
