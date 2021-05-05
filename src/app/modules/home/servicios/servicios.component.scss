@@ -1,6 +1,18 @@
+.servicio-container:hover {
+// background-color: var(--secondary-3);
+transition: 300ms;
+border: 1px solid var(--secondary-4);
+}
+.servicio-container {
+    border: 1px solid var(--primary-4);
+    }
 h2 {
-    font-family: Peugeot_new-bold;
+    font-family: "Peugeot_new-bold";
 }
 h4 {
     font-family: "Peugeot_new-regular";
 }
+h5 {
+    font-family: "Peugeot_new-regular";
+}
+

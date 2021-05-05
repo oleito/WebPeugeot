@@ -10,14 +10,17 @@ export class ServiciosComponent implements OnInit {
   servicios= [
     {
       img: "ahorro.jpg",
+      seccion:"Venta directa",
       telefono: "266 430 3957"
     },
     {
-      img: "autoplan.jpg",
+      img: "ahorro.jpg",
+      seccion:"Plan de ahorro",
       telefono: "266 450 3609"
     },
     {
-      img: "profesional.jpg",
+      img: "ahorro.jpg",
+      seccion:"Atencion a empresas",
       telefono: "260 453 5192"
     },
   ]
