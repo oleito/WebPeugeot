@@ -9,6 +9,7 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactoComponent } from './contacto/contacto.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { VendedoresComponent } from './vendedores/vendedores.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { GoogleMapsModule } from '@angular/google-maps';
     HomeComponent,
     ModelosComponent,
     ServiciosComponent,
-    ContactoComponent
+    ContactoComponent,
+    VendedoresComponent
   ],
   imports: [
     CommonModule,

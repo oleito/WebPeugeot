@@ -13,6 +13,10 @@
   src: url(assets/fonts/Peugeot_New/WOFF/Peugeot_New-Bold.woff) format("woff");
 }
 
+@font-face {
+  font-family: Peugeot_new-light;
+  src: url(assets/fonts/Peugeot_New/WOFF/Peugeot_New-Light.woff) format("woff");
+}
 // Definicion colores segun manual de marca
 :root {
   --primary-1: #000000;

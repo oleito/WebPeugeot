@@ -1,17 +1,10 @@
 <div class="pt-5">
     <h2>SERVICIOS</h2>
     <div class="row">
-        <div class="col m-4">
-            <img src="assets/home/servicios/ahorro.jpg" alt="" class="img-fluid">
-            <button type="button" class="btn btn-primary-2 disable rounded-0 mt-3">POSTVENTA</button>
-        </div>
-        <div class="col m-4">
-            <img src="assets/home/servicios/profesional.jpg" alt="" class="img-fluid">
-            <button type="button" class="btn btn-primary-2 disable rounded-0 mt-3">EMPRESAS</button>
-        </div>
-        <div class="col m-4">
-            <img src="assets/home/servicios/autoplan.jpg" alt="" class="img-fluid">
-            <button type="button" class="btn btn-primary-2 disable rounded-0 mt-3">PLAN DE AHORRO</button>
+        <div class="col m-4 text-center servicio-container py-3" *ngFor="let servicio of servicios">
+            <img src="assets/home/servicios/{{ servicio.img }}" class="img-fluid px-5 pt-2 pb-0">
+            <h4> {{ servicio.seccion }} </h4>
+            <h5> {{ servicio.telefono }} </h5>
         </div>
     </div>
 </div>
