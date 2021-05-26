@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SliderComponent } from './components/slider/slider.component';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    SliderComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +20,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   exports: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    SliderComponent
   ]
 })
 export class SharedModule { }

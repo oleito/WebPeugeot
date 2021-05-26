@@ -1,10 +1,10 @@
-<ngb-carousel *ngIf="images">
-    <ng-template ngbSlide *ngFor="let image of images; index as i">
+<ngb-carousel *ngIf="slides">
+    <ng-template ngbSlide *ngFor="let slide of slides; index as i">
         <div class="picsum-img-wrapper">
-            <img [src]="images[i]" class="img-fluid" alt="Random first slide">
+            <img [src]="baseUrl + slide.imgSrc" class="img-fluid" [alt]="slide.imgAlt">
         </div>
         <div class="carousel-caption">
             <button type="button" class="btn btn-primary-2 btn-lg rounded-0">CONTACTAR</button>
         </div>
     </ng-template>
-</ngb-carousel>
+</ngb-carousel>|

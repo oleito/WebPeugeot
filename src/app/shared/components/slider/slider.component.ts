@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -6,9 +6,13 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.scss']
 })
-export class SliderComponent implements OnInit {
+export class SliderComponent implements OnChanges, OnInit {
 
-  images = [208, 2008, 'partner'].map((n) => `assets/home/slider/slider-ndp-nuevo-${n}.jpg`);
+  @Input()
+  slides = [];
+
+  @Input()
+  baseUrl = '';
 
   constructor(config: NgbCarouselConfig) {
     config.showNavigationIndicators = false,
@@ -17,6 +21,10 @@ export class SliderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  ngOnChanges(): void {
+    console.log(this.slides);
   }
 
 }
