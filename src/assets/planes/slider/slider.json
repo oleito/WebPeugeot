@@ -1,0 +1,17 @@
+{
+    "baseUrl": "assets/planes/slider/",
+    "slideList": [
+        {
+            "imgSrc": "slider-nuevo-208.jpg",
+            "imgAlt": "Nuevo 208"
+        },
+        {
+            "imgSrc": "slider-nuevo-2008.jpg",
+            "imgAlt": "2008"
+        },
+        {
+            "imgSrc": "slider-nuevo-partner.jpg",
+            "imgAlt": "Partner"
+        }
+    ]
+}

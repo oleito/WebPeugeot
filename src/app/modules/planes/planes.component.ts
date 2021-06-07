@@ -2,12 +2,11 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-profesional',
-  templateUrl: './profesional.component.html',
-  styleUrls: ['./profesional.component.scss']
+  selector: 'app-planes',
+  templateUrl: './planes.component.html',
+  styleUrls: ['./planes.component.scss']
 })
-export class ProfesionalComponent implements OnInit {
-  
+export class PlanesComponent implements OnInit {
   slides: any = []
   baseUrl = '';
 
@@ -21,6 +20,6 @@ export class ProfesionalComponent implements OnInit {
   }
 
   getJsonDataService() {
-    return this.httpClient.get('assets/profesional/slider/slider.json')
+    return this.httpClient.get('assets/planes/slider/slider.json')
   }
 }

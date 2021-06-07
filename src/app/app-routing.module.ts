@@ -19,6 +19,10 @@ const routes: Routes = [
   {
     path: 'profesional',
     loadChildren: () => import('./modules/profesional/profesional.module').then(m => m.ProfesionalModule)
+  },
+  {
+    path: 'planes',
+    loadChildren: () => import('./modules/planes/planes.module').then(m => m.PlanesModule)
   }
 ];
 

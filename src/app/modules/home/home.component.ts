@@ -9,21 +9,35 @@ import { EventEmitter } from 'events';
 })
 export class HomeComponent implements OnInit {
 
-  slidesListUpdated = new EventEmitter();
   slides: any = []
-  baseUrl = '';
+  slidesBaseUrl = '';
+
+  vendedores: any = [];
+  vendedoresBaseUrl = '';
 
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
-    this.getJsonDataService().subscribe(data => {
-      this.slides   = data['slideList'];
-      this.baseUrl  = data['baseUrl'];
+    this.getSlides();
+    this.getVendedores();
+  }
+
+  getSlides() {
+    this.getJsonDataService('assets/home/slider/slider.json').subscribe(data => {
+      this.slides = data['slideList'];
+      this.slidesBaseUrl = data['baseUrl'];
+    })
+  }
+  
+  getVendedores() {
+    this.getJsonDataService('assets/home/vendedores/vendedores.json').subscribe(data => {
+      this.vendedores = data['vendedoresList'];
+      this.vendedoresBaseUrl = data['baseUrl'];
     })
   }
 
-  getJsonDataService() {
-    return this.httpClient.get('assets/home/slider/slider.json')
+  getJsonDataService(URL: string) {
+    return this.httpClient.get(URL)
   }
 
 }

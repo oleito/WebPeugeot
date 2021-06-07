@@ -6,6 +6,7 @@ import { ProfesionalComponent } from './profesional.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { CondicionComponent } from './condicion/condicion.component';
 import { GamaComponent } from './gama/gama.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { GamaComponent } from './gama/gama.component';
   imports: [
     SharedModule,
     CommonModule,
-    ProfesionalRoutingModule
+    ProfesionalRoutingModule,
+    HttpClientModule
   ]
 })
 export class ProfesionalModule { }

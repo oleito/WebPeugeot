@@ -17,6 +17,7 @@
   font-family: Peugeot_new-light;
   src: url(assets/fonts/Peugeot_New/WOFF/Peugeot_New-Light.woff) format("woff");
 }
+
 // Definicion colores segun manual de marca
 :root {
   --primary-1: #000000;
@@ -55,4 +56,10 @@ textarea,
 .btn-primary-2:hover {
   background-color: var(--primary-1);
   color: var(--primary-4);
+}
+h3 {
+  font-family: Peugeot_new-regular;
+}
+p {
+  font-family: Peugeot_new-regular;
 }
