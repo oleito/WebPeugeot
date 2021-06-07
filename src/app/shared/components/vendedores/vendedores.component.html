@@ -1,16 +1,16 @@
-<div class="pt-5">
+<div class="pt-5 mt-md-4">
     <h2>REPRESENTANTES COMERCIALES</h2>
     <div class="row justify-content-around">
         <div class="col-md-3 d-flex px-2" *ngFor="let vendedor of vendedores">
-            <div class="card rounded-0 mb-3">
-                <div class="m-2">
-                    <img src="assets/home/vendedores/{{vendedor.img}}" class=" img-fluid" alt="	">
+            <div class="card border-0 rounded-0 mb-3">
+                <div class="mx-2 mt-2 mb-0">
+                    <img src="assets/home/vendedores/{{vendedor.img}}" class=" img-fluid" alt=" {{ vendedor.nombre }} ">
                 </div>
-                <div class="card-body pt-2 pb-2 px-2">
-                    <h3 class="m-0"> {{ vendedor.nombre }} </h3>
+                <div class="card-body pt-1 pb-2 px-2">
                     <p class="card-text m-0 mb-1"> {{ vendedor.sector }} </p>
-                    <p class="mb-1"><i class="fas fa-phone"></i> {{ vendedor.cel }} </p>
-                    <p class="mb-1"><small> {{ vendedor.email }} </small></p>
+                    <h3 class="m-0 py-1"> {{ vendedor.nombre }} </h3>
+                    <p class="my-0"><i class="fas fa-phone"></i> {{ vendedor.cel }} </p>
+                    <p class="my-0"><small> {{ vendedor.email }} </small></p>
                 </div>
             </div>
         </div>

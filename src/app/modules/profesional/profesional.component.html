@@ -1,9 +1,12 @@
 <div class="container">
-    <app-slider [slides]="slides" [baseUrl]="baseUrl"></app-slider>
+    <app-slider [slides]="slides" [baseUrl]="slidesBaseUrl"></app-slider>
 </div>
 <div class="container">
     <app-condicion></app-condicion>
 </div>
 <div class="container">
-    <app-gama></app-gama>
+    <app-modelos [titulo]="utilitariosTitulo" [modelos]="utilitariosList" [baseUrl]="modelosBaseUrl"></app-modelos>
+</div>
+<div class="container">
+    <app-modelos [titulo]="particularesTitulo" [modelos]="particularesList" [baseUrl]="modelosBaseUrl"></app-modelos>
 </div>

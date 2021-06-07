@@ -15,11 +15,22 @@ export class HomeComponent implements OnInit {
   vendedores: any = [];
   vendedoresBaseUrl = '';
 
+  modelos: any = []
+  modelosBaseUrl = '';
+
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
     this.getSlides();
+    this.getModelos();
     this.getVendedores();
+  }
+
+  getModelos() {
+    this.getJsonDataService('assets/home/models/models.json').subscribe(data => {
+      this.modelos = data['modelList'];
+      this.modelosBaseUrl = data['baseUrl'];
+    })
   }
 
   getSlides() {

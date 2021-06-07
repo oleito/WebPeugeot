@@ -18,4 +18,8 @@ export class VendedoresComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ngOnChanges(): void {
+    console.log(this.vendedores);
+  }
+
 }

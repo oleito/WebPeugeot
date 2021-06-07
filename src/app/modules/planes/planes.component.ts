@@ -7,19 +7,46 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./planes.component.scss']
 })
 export class PlanesComponent implements OnInit {
+ 
   slides: any = []
-  baseUrl = '';
+  slidesBaseUrl = '';
+
+  vendedores: any = [];
+  vendedoresBaseUrl = '';
+
+  modelos: any = []
+  modelosBaseUrl = '';
 
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
-    this.getJsonDataService().subscribe(data => {
-      this.slides = data['slideList'];
-      this.baseUrl = data['baseUrl'];
+    this.getSlides();
+    this.getModelos();
+    this.getVendedores();
+  }
+
+  getModelos() {
+    this.getJsonDataService('assets/planes/models/models.json').subscribe(data => {
+      this.modelos = data['modelList'];
+      this.modelosBaseUrl = data['baseUrl'];
     })
   }
 
-  getJsonDataService() {
-    return this.httpClient.get('assets/planes/slider/slider.json')
+  getSlides() {
+    this.getJsonDataService('assets/planes/slider/slider.json').subscribe(data => {
+      this.slides = data['slideList'];
+      this.slidesBaseUrl = data['baseUrl'];
+    })
+  }
+  
+  getVendedores() {
+    this.getJsonDataService('assets/planes/vendedores/vendedores.json').subscribe(data => {
+      this.vendedores = data['vendedoresList'];
+      this.vendedoresBaseUrl = data['baseUrl'];
+    })
+  }
+
+  getJsonDataService(URL: string) {
+    return this.httpClient.get(URL)
   }
 }
